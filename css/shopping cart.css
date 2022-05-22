@@ -202,7 +202,7 @@
 /* Media */
 @media (max-width:700px) {
     .shopping_cart {
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .shopping_cart_flex {
         flex-wrap: wrap;

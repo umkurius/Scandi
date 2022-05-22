@@ -149,7 +149,7 @@
 /* Media */ 
 @media (max-width:700px) {
     .payment {
-        padding: 0 20px;
+        padding: 0 10px;
         margin-top: 15px;
     }
     .payment_flex {

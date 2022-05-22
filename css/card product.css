@@ -360,7 +360,7 @@
         margin-top: 30px;
     }
     .tab_inner {
-        padding: 0 20px;
+        padding: 0 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

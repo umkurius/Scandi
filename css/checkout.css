@@ -161,7 +161,7 @@
 
 @media (max-width:700px) {
     .checkout {
-        padding: 0 20px;
+        padding: 0 10px;
         margin-top: 15px;
     }
     .checkout_flex {
