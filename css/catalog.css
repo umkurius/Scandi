@@ -1,0 +1,243 @@
+/* Bread */
+.bread {
+    margin-top: 15px;
+}
+.bread_ul {
+    padding: 0;
+}
+.bread_text {
+    display: inline-block;
+    list-style: none;
+}
+.bread_text::after {
+    padding: 0 15px;
+    content: "/";
+}
+.bread_text:last-child::after {
+    padding: 0;
+    content: none;
+}
+.home {
+    font-weight: 600;
+}
+.bread_link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #4E5156;
+}
+.bread_link:hover {
+    text-decoration: underline;
+    color: #4E5156;
+}
+/* Main */
+.main {
+    margin-top: 55px;
+}
+.main_inner {
+    display: flex;
+    justify-content: space-between;
+}
+/* Accordion */
+.accordion {
+    width: 250px;
+    flex-shrink: 0;
+    margin-right: 70px;
+}
+.accordion-button {
+    border: none;
+    color: #4E5156;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 400;
+}
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background: #fff;
+    color: #4E5156;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid rgba(110, 109, 114, 0.15);
+}
+.accordion_show {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 48px;
+    color: #fff;
+    height: 50px;
+    margin: 15px 20px;
+    background: #97A8AF;
+    transition: .3s;
+}
+.accordion_clear {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 48px;
+    color: #97A8AF;
+    border: 2px solid #97A8AF; 
+    height: 50px;
+    margin: 15px 20px;
+    transition: .3s;
+}
+.accordion_show:hover {
+    background: #7a888e;
+    color: #fff;
+}
+.accordion_clear:hover {
+    border-color: #7a888e;
+    color: #97A8AF;
+}
+
+.sorting_text {
+    display: block;
+    color: #4E5156;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+.sorting_box {
+    margin-right: 16px;
+}
+.sorting_box:checked {
+    background: #4E5156;
+}
+
+/* Result */
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.result_head {
+    flex-basis: 100%;
+}
+.filter_button {
+    display: none;
+}
+.result_mobile {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.result_sort {
+    text-align: right;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+.result_sort_area {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid rgba(110, 109, 114, 0.5);
+    margin-left: 15px;
+    cursor: pointer;
+}
+.result_contentbox {
+    margin-bottom: 30px;
+}
+.page {
+    flex: 0 0 100%;
+    text-align: right;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.page a {
+    text-decoration: none;
+    color: #4E5156;
+}
+.none {
+    display: none;
+    transition: 0.3s;
+}
+/* Media */
+@media (max-width:700px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .bread {
+        margin-top: 10px;
+    }
+    .bread_inner {
+        padding: 0 20px;
+    }
+    .main {
+        margin-top: 20px;
+    }
+    .accordion {
+        padding-top: 40px;
+        position: absolute;
+        left: -100%;
+        transition: .3s;
+    }
+    .accordion_show,
+    .accordion_clear {
+        display: block;
+    }
+    .accordion.actived {
+        left: 0;
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .result {
+        padding: 0 10px;
+    }
+    .result_head {
+        display: none;
+    }
+    .filter_button {
+        font-size: 14px;
+        font-weight: 400;
+        width: 150px;
+        height: 30px;
+        line-height: 28px;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        border: 1px solid rgba(110, 109, 114, 0.5);
+    }
+    .filter_buttonM.flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        z-index: 2;
+        margin-top: -10px;
+        padding: 0 20px;
+    }
+    .filter_buttonM.flex span {
+        margin-left: 130px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .result_sort span {
+        display: none;
+    }
+    .page {
+        text-align: center;
+    }
+    .page a {
+        margin-left: 10px;
+    }
+    .page a:first-child {
+        margin-left: 0;
+    }
+}
+
+
+

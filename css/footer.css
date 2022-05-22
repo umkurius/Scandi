@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.footer {
+    margin-top:90px;
+    background: rgba(199, 211, 211, 0.15); 
+    height: 350px; 
+}
+.footer_inner {
+    height: 350px;
+}
+.footer_content {
+    display: flex;
+}
+.footer_social {
+    flex-basis: 43%;
+}
+.footer_socialhead {
+    font-family: "Century Gothic";
+    font-size: 35px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.footer_sociallink {
+    text-decoration: none;
+    margin-right: 16px;
+}
+.footer_sociallink:last-child {
+    margin: 0;
+}
+.footer_icon {
+    transition: .3s;
+}
+.footer_sociallink:hover .footer_icon {
+    fill: #D7BAB8;
+}
+.footer_service {
+    flex-basis: 35%;
+}
+.footer_service,
+.footer_about {
+    margin-top: 40px;
+}
+.footer_head {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer_link {
+    display: inline-block;
+    margin-top: 6px;
+    text-decoration: none;
+    color: #4E5156;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer_link:hover {
+    text-decoration: underline;
+    color: #4E5156;
+}
+.footer_end {
+    margin-top: 90px;
+    border-top: 1px solid rgba(110, 109, 114, 0.15);
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(110, 109, 114, 0.5);
+}
+.footer_text {
+    position: absolute;
+    top: 15px;
+}
+.footer_sign {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+/* Media */
+@media (max-width:700px) {
+    .footer {
+        margin:30px 0 0;
+    }
+    .footer_content {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .footer_service,
+    .footer_about {
+        flex: 0 0 50%;
+        padding-left: 20px;
+    }
+    .footer_service {
+        order: 1;
+    }
+    .footer_about {
+        order: 2;
+    }
+    .footer_social {
+        flex: 0 0 100%;
+        order: 3;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer_socialhead {
+        display: none;
+    }
+    .footer_head {
+        font-size: 16px;
+    }
+    .footer_link {
+        font-size: 12px;
+    }
+    .footer_end {
+        margin: 30px 20px 0;
+    }
+}

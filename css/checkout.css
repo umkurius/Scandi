@@ -1,0 +1,208 @@
+.checkout {
+    margin-top: 30px;
+}
+.checkout_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.checkout_inner_head {
+    font-size: 30px;
+    font-weight: 400;
+    color: #4E5156;
+}
+.checkout_box {
+    margin-top: 30px;
+    width: 538px;
+}
+.checkout_box_addres {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(110, 109, 114, 0.15);
+}
+.checkout_box_text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6E6D72;
+    display: inline-block;
+    margin: 15px 0 10px;
+}
+.checkout_box_text:nth-child(2) {
+    margin-top: 0;
+}
+.checkout_box_input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(110, 109, 114, 0.5);
+    height: 31px;
+    text-indent: 15px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.checkout_box_input.valid {
+    border: 1px solid lightgreen;
+}
+.checkout_box_input.invalid {
+    border: 1px solid red;
+}
+.checkout_box_input:focus {
+    outline: 0;
+}
+.checkout_box_text_star {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+}
+.checkout_box_end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.checkout_box_endM {
+    display: none;
+}
+.checkout_box_back {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6E6D72;
+    text-decoration: none;
+}
+.checkout_box_back:hover {
+    text-decoration: underline;
+}
+.checkout_box_next {
+    width: 130px;
+    height: 41px;
+    line-height: 40px;
+    text-align: center;
+    background: #97A8AF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+.checkout_box_next:hover {
+    background: #7a888e;
+}
+/* Summary */
+.summary {
+    align-self: flex-start;
+    background: #F7F8F8;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 507px;
+}
+.summary_inner {
+    margin: 20px 30px;
+}
+.summary_inner_head {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6E6D72;
+}
+.summary_inner_box {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(110, 109, 114, 0.15);
+}
+.summary_inner_box:last-child {
+    border-bottom: none;
+}
+.summary_inner_img {
+    flex: 0 0 25%;
+    width: 100px;
+    border: 1px solid rgba(110, 109, 114, 0.15);
+}
+.summary_inner_spec {
+    flex: 0 0 50%
+}
+.summary_inner_spec p:first-child {
+    margin-bottom: 5px;
+}
+.summary_inner_spec p:last-child {
+    margin-top: 16px;
+}
+.summary_inner_text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4E5156;
+}
+.summary_inner_color {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6E6D72;
+}
+.summary_inner_count {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4E5156;
+}
+.summary_inner_endbox {
+    display: flex;
+    justify-content: space-between;
+}
+.summary_inner_endbox {
+    margin-bottom: 20px;
+}
+.summary_inner_endbox:last-child {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+/* Media */
+
+@media (max-width:700px) {
+    .checkout {
+        padding: 0 20px;
+        margin-top: 15px;
+    }
+    .checkout_flex {
+        flex-wrap: wrap;
+    }
+    .checkout_inner_head {
+        font-size: 20px;
+    }
+    .checkout_box {
+        margin-top: 15px;
+    }
+    .checkout_box_addres {
+        display: none;
+    }
+    .checkout_box_end {
+        display: none;
+    }
+    .checkout_box_endM {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .checkout_box_endM a {
+        flex: 0 0 100%;
+    }
+    .checkout_box_endM a:last-child {
+        justify-content: center;
+        padding-right: 20px;
+        margin-top: 35px;
+    }
+    .summary {
+        margin-left: 0;
+    }
+    .summary_inner {
+        margin: 10px;
+    }
+    .summary_inner_box {
+        padding: 20px 0;
+    }
+    .summary_inner_spec {
+        flex: 0 0 45%;
+    }
+}
