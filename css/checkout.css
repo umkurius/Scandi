@@ -158,7 +158,6 @@
 }
 
 /* Media */
-
 @media (max-width:700px) {
     .checkout {
         padding: 0 10px;
@@ -172,6 +171,7 @@
     }
     .checkout_box {
         margin-top: 15px;
+        width: 100%;
     }
     .checkout_box_addres {
         display: none;
@@ -195,6 +195,7 @@
     }
     .summary {
         margin-left: 0;
+        width: 100%;
     }
     .summary_inner {
         margin: 10px;
